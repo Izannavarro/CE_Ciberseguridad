@@ -1,5 +1,4 @@
-const Pac1 = require("./Paciente");
+const Paciente1 = require("./Paciente");
+Paciente1.constructor();
 
-Pac1 = new Paciente();
-console.log(Pac1.obtenerNombre());
-Pac1.saludar();
+console.log(Paciente1.obtenerApellidos());
