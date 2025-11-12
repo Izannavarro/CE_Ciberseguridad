@@ -1,0 +1,7 @@
+*.iso
+*.zip
+*.exe
+*.mp4
+*.tar
+*.log
+ANALISIS_FORENSE/APPS_EJECUTABLES/kape/Modules/bin/

@@ -1,0 +1,44 @@
+🔹 8. Habilitar redirección X11 (para aplicaciones gráficas remotas)
+
+En /etc/ssh/sshd_config asegúrate de tener:
+
+X11Forwarding yes
+X11DisplayOffset 10
+
+
+Reinicia SSH:
+
+sudo systemctl restart ssh
+
+
+📸 Captura: Las líneas correspondientes en el archivo.
+
+Explicación:
+
+La redirección X11 permite ejecutar programas gráficos en el servidor y mostrarlos en el cliente (por ejemplo, abrir Firefox remoto).
+
+🔹 9. Permitir solo un usuario específico
+
+En el mismo archivo sshd_config, añade al final:
+
+AllowUsers usuario_permitido
+
+Esto restringe el acceso SSH únicamente a ese usuario.
+
+Reinicia:
+
+sudo systemctl restart ssh
+
+
+📸 Captura: línea AllowUsers en el archivo y prueba de conexión.
+
+🧾 Resumen de comandos clave
+sudo apt install openssh-server openssh-client -y
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+sudo nano /etc/ssh/sshd_config
+sudo systemctl restart ssh
+sudo systemctl status ssh
+
+🧠 Consejo final
+
+Antes de probar configuraciones que puedan bloquear el acceso (como cambiar el puerto o restringir usuarios), mantén una sesión SSH abierta o usa acceso local a la máquina, así podrás corregir errores si algo falla.

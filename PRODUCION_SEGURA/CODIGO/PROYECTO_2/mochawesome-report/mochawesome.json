@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-11-03T18:24:32.016Z",
+    "end": "2025-11-03T18:24:32.031Z",
+    "duration": 15,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4ba433d5-89c5-4cfa-802d-550f8de21eba",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f3bbdd4-e7e2-4e8d-9407-65c35a4e9f1e",
+          "title": "Pruebas de la clase Paciente",
+          "fullFile": "C:\\Users\\Izan Navarro\\Desktop\\CIBERSEGURIDAD\\CE_Ciberseguridad\\PRODUCION_SEGURA\\CODIGO\\PROYECTO_2\\test\\Prueba1.js",
+          "file": "\\test\\Prueba1.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe tener el nombre \"Pepe\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener el nombre \"Pepe\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerNombre()).to.equal('Pepe');",
+              "err": {},
+              "uuid": "380ebc49-aef9-47f8-9a5f-1775e2ae17d5",
+              "parentUUID": "7f3bbdd4-e7e2-4e8d-9407-65c35a4e9f1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe tener los apellidos \"Pepito\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener los apellidos \"Pepito\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerApellidos()).to.equal('Pepito');",
+              "err": {},
+              "uuid": "fcbd49eb-4ac8-4dff-a662-0b5d03e5c9ec",
+              "parentUUID": "7f3bbdd4-e7e2-4e8d-9407-65c35a4e9f1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe tener la fecha de nacimiento \"18/11/1999\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener la fecha de nacimiento \"18/11/1999\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerFechaNacimiento()).to.equal('18/11/1999');",
+              "err": {
+                "message": "AssertionError: expected '23/09/2000' to equal '18/11/1999'",
+                "estack": "AssertionError: expected '23/09/2000' to equal '18/11/1999'\n    at Context.<anonymous> (test\\Prueba1.js:19:50)\n    at process.processImmediate (node:internal/timers:483:21)",
+                "diff": "- 23/09/2000\n+ 18/11/1999\n"
+              },
+              "uuid": "e663044f-16c1-4648-a7fc-0745effba4db",
+              "parentUUID": "7f3bbdd4-e7e2-4e8d-9407-65c35a4e9f1e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "El método saludar() debe devolver \"Hola soy Antonio.\"",
+              "fullTitle": "Pruebas de la clase Paciente El método saludar() debe devolver \"Hola soy Antonio.\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.saludar()).to.equal('Hola soy Antonio');",
+              "err": {
+                "message": "AssertionError: expected 'Hola soy Pepe' to equal 'Hola soy Antonio'",
+                "estack": "AssertionError: expected 'Hola soy Pepe' to equal 'Hola soy Antonio'\n    at Context.<anonymous> (test\\Prueba1.js:23:35)\n    at process.processImmediate (node:internal/timers:483:21)",
+                "diff": "- Hola soy Pepe\n+ Hola soy Antonio\n"
+              },
+              "uuid": "a9194f3b-1c44-4589-9555-f77d1edd230f",
+              "parentUUID": "7f3bbdd4-e7e2-4e8d-9407-65c35a4e9f1e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "380ebc49-aef9-47f8-9a5f-1775e2ae17d5",
+            "fcbd49eb-4ac8-4dff-a662-0b5d03e5c9ec"
+          ],
+          "failures": [
+            "e663044f-16c1-4648-a7fc-0745effba4db",
+            "a9194f3b-1c44-4589-9555-f77d1edd230f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "9eb56506-bd67-446c-8e08-671f938ce4fa",
+          "title": "Pruebas de la clase Paciente",
+          "fullFile": "C:\\Users\\Izan Navarro\\Desktop\\CIBERSEGURIDAD\\CE_Ciberseguridad\\PRODUCION_SEGURA\\CODIGO\\PROYECTO_2\\test\\Prueba2_Correccion.js",
+          "file": "\\test\\Prueba2_Correccion.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Debe tener el nombre \"Pepe\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener el nombre \"Pepe\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerNombre()).to.equal('Pepe');",
+              "err": {},
+              "uuid": "80865ae9-31b6-4007-b104-354cfe8a8bb8",
+              "parentUUID": "9eb56506-bd67-446c-8e08-671f938ce4fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe tener los apellidos \"Pepito\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener los apellidos \"Pepito\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerApellidos()).to.equal('Pepito');",
+              "err": {},
+              "uuid": "ec66dca8-4fdb-436a-ad16-7464f5270127",
+              "parentUUID": "9eb56506-bd67-446c-8e08-671f938ce4fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Debe tener la fecha de nacimiento \"23/09/2000\"",
+              "fullTitle": "Pruebas de la clase Paciente Debe tener la fecha de nacimiento \"23/09/2000\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.obtenerFechaNacimiento()).to.equal('23/09/2000');",
+              "err": {},
+              "uuid": "607da4e3-61dd-4f15-904f-19fa10ab0986",
+              "parentUUID": "9eb56506-bd67-446c-8e08-671f938ce4fa",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "El método saludar() debe devolver \"Hola soy Pepe.\"",
+              "fullTitle": "Pruebas de la clase Paciente El método saludar() debe devolver \"Hola soy Pepe.\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(paciente.saludar()).to.equal('Hola soy Pepe');",
+              "err": {},
+              "uuid": "d6c435c5-04f9-4eac-97e2-0ed0c98007c4",
+              "parentUUID": "9eb56506-bd67-446c-8e08-671f938ce4fa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80865ae9-31b6-4007-b104-354cfe8a8bb8",
+            "ec66dca8-4fdb-436a-ad16-7464f5270127",
+            "607da4e3-61dd-4f15-904f-19fa10ab0986",
+            "d6c435c5-04f9-4eac-97e2-0ed0c98007c4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.4"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.0"
+    }
+  }
+}
