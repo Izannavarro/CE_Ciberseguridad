@@ -1,0 +1,22 @@
+{
+  "name": "examen2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.7.5"
+  },
+  "dependencies": {
+    "chai": "^4.5.0",
+    "mochawesome": "^7.1.4"
+  }
+}
